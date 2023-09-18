@@ -1,3 +1,4 @@
+'''
 import random, csv, os
 
 print("Welcome!")
@@ -195,3 +196,4 @@ while True:
         break
     else:
         attempts += 1
+'''
