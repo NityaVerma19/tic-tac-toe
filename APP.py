@@ -20,6 +20,15 @@ class Ttt:
 
 
 
+
+        button = Button(self.root , text= 'PLAY', bg = 'black', fg ="#C4006E" ,command=self.on_button_click)
+        button.place(relx=0.5, rely=0.5, anchor='center')
+        button.configure(font = ('Times New Roman', 25 ))
+
+
+    def on_button_click(self):
+        print("Button clicked!")
+
 ttt = Ttt()
 
 
