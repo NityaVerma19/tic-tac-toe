@@ -14,22 +14,30 @@ class Ttt:
 
 
     def home(self):
-        heading = Label(self.root ,text = 'TIC TAC TOE', bg = "black" , fg = "#C4006E" )
+        heading = Label(self.root ,text = 'TIC TAC TOE', bg = "black" , fg = "white" )
         heading.pack(pady = (20,20))
-        heading.configure(font = ("Times New Roman" ,32 , 'bold') )
+        heading.configure(font = ("Montserrat" ,32 , 'bold') )
 
 
 
 
-        button = Button(self.root , text= 'PLAY', bg = 'black', fg ="#C4006E" ,command=self.on_button_click)
+        button = Button(self.root , text= 'PLAY', bg = 'black', fg ="white" ,command=self.on_button_click)
         button.place(relx=0.5, rely=0.5, anchor='center')
-        button.configure(font = ('Times New Roman', 25 ))
+        button.configure(font = ('Montserrat', 20 ))
 
+
+        button2 = Button(self.root, text = 'QUIT', bg = 'black', fg = 'white', command = self.quit_gui)
+        button2.place(relx=0.5, rely=0.8, anchor= 'center')
+        button2.configure(font=('Montserrat', 20))
 
     def on_button_click(self):
         print("Button clicked!")
 
+    def quit_gui(self):
+        self.root.destroy()
+
 ttt = Ttt()
+
 
 
 
